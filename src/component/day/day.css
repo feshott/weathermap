@@ -1,0 +1,86 @@
+.day{
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn .5s both;
+    color: white;
+}
+.temp_wrapper{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+.temp_block{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+.description{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.speed{
+    position: relative;
+    margin-bottom: 5px;
+    margin-left: 35px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.speed::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -32px;
+    width: 25px;
+    height: 25px;
+    background-image:url('../../img/wind.svg');
+    background-size: contain;
+}
+.clouds{
+    position: relative;
+    margin-bottom: 5px;
+    margin-left: 35px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.clouds::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -32px;
+    width: 25px;
+    height: 25px;
+    background-image:url('../../img/cloud.svg');
+    background-size: contain;
+}
+.humidity{
+    position: relative;
+    margin-bottom: 5px;
+    margin-left: 35px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.humidity::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -32px;
+    width: 25px;
+    height: 25px;
+    background-image:url('../../img/humidity.svg');
+    background-size: contain;
+}
+
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

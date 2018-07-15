@@ -1,0 +1,91 @@
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+.weather{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1819ff;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+.color_weather{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.color_weather_Clear{
+    background: #645f2d6e;
+}
+.color_weather_Snow{
+    background: #26265a47;
+}
+.main{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    box-sizing: border-box;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main_image_Moscow{
+    background-image:url('./img/moscow.jpg');
+}
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.city{
+    color: white;
+    font-size: 38px;
+    font-weight: 300;
+}
+.curr_day{
+    color: white;
+    font-size: 38px;
+    font-weight: 300;
+    animation: fadeIn .5s both;
+
+}
+.week_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.day_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 15px;
+    cursor: pointer;
+}
+.day_btn_image{
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.day_btn_image_Clear{
+    background-image:url('./img/sun.svg');
+}
+.day_btn_image_Snow{
+    background-image:url('./img/snow.svg');
+}
