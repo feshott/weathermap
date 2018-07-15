@@ -52,13 +52,14 @@
     color: white;
     font-size: 38px;
     font-weight: 300;
+    margin: 0;
 }
 .curr_day{
     color: white;
     font-size: 38px;
     font-weight: 300;
     animation: fadeIn .5s both;
-
+    margin: 0;
 }
 .week_wrapper{
     display: flex;

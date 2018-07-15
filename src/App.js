@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { weather_data } from './data';
+import { weather_data } from './data/data';
 import Day from './component/day/day';
 import './App.css';
 
@@ -35,8 +35,8 @@ class App extends Component {
           <div className={`main ${'main_image_' + currState.city.name}`}>
             <div className={`color_weather ${'color_weather_' + currState.list[nowDay].weather[0].main}`}></div>
             <div className="header">
-              <div className="city">{currState.city.name}</div>
-              <div key={nowDay}className="curr_day">{days[nowDay]}</div>
+              <p className="city">{currState.city.name}</p>
+              <p key={nowDay}className="curr_day">{days[nowDay]}</p>
             </div>
             <Day key={nowDay} date={currState.list[nowDay]} />
           </div>

@@ -17,7 +17,7 @@ class Day extends Component {
     return (
       <div className="day">
 
-        <div className="description">{date.weather[0].description}</div>
+        <p className="description">{date.weather[0].description}</p>
 
         <div className="temp_wrapper">
           {this.createTempBlock('morn')}
@@ -26,9 +26,9 @@ class Day extends Component {
           {this.createTempBlock('night')}
         </div>
 
-        <div className="speed">{date.speed}mph</div>
-        <div className="clouds">{date.clouds}%</div>
-        <div className="humidity">{date.humidity}%</div>
+        <p className="speed">{date.speed}mph</p>
+        <p className="clouds">{date.clouds}%</p>
+        <p className="humidity">{date.humidity}%</p>
       </div>
     );
   }

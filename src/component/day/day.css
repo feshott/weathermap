@@ -10,18 +10,21 @@
     justify-content: space-between;
 }
 .temp_block{
+    
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: 400;
     text-align: center;
 }
 .description{
+    margin: 0;
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 300;
 }
 .speed{
     position: relative;
+    margin: 0;
     margin-bottom: 5px;
     margin-left: 35px;
     font-size: 20px;
@@ -40,6 +43,7 @@
 }
 .clouds{
     position: relative;
+    margin: 0;
     margin-bottom: 5px;
     margin-left: 35px;
     font-size: 20px;
@@ -58,6 +62,7 @@
 }
 .humidity{
     position: relative;
+    margin: 0;
     margin-bottom: 5px;
     margin-left: 35px;
     font-size: 20px;
