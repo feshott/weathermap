@@ -31,6 +31,12 @@
 .color_weather_Snow{
     background: #26265a47;
 }
+.color_weather_Clouds{
+    background: #2f2f3582;
+}
+.color_weather_Rain{
+    background: #26265a47;
+}
 .main{
     position: relative;
     width: 100%;
@@ -89,4 +95,10 @@
 }
 .day_btn_image_Snow{
     background-image:url('./img/snow.svg');
+}
+.day_btn_image_Clouds{
+    background-image:url('./img/clouds.svg');
+}
+.day_btn_image_Rain{
+    background-image:url('./img/rain.svg');
 }
