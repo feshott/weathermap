@@ -18,20 +18,18 @@ class Day extends Component {
     return (
       <div className="day">
 
-        {/* описание погоды, влажность , скорость ветра, облачность показывают значения середины дня */}
-        <p className="description">{date[needTime[6]].weather[0].description}</p>
+        <p className="description">{date[needTime[0]].weather[0].description}</p>
 
         <div className="temp_wrapper">
-          {this.createTempBlock('Morn','4', needTime)}
-          {this.createTempBlock('Day','5', needTime)}
-          {this.createTempBlock('Eve','7', needTime)}
-          {this.createTempBlock('Night','2', needTime)}
+          {this.createTempBlock('Morn','0', needTime)}
+          {this.createTempBlock('Day','2', needTime)}
+          {this.createTempBlock('Eve','3', needTime)}
+          {this.createTempBlock('Night','4', needTime)}
         </div>
 
-        {/* описание погоды, влажность , скорость ветра, облачность показывают значения середины дня */}
-        <p className="speed">{date[needTime[6]].wind.speed}mps</p>
-        <p className="clouds">{date[needTime[6]].clouds.all}%</p>
-        <p className="humidity">{date[needTime[6]].main.humidity}%</p>
+        <p className="speed">{date[needTime[0]].wind.speed}mps</p>
+        <p className="clouds">{date[needTime[0]].clouds.all}%</p>
+        <p className="humidity">{date[needTime[0]].main.humidity}%</p>
       </div>
     );
   }
